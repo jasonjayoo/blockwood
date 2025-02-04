@@ -53,7 +53,7 @@ export function Sidebar() {
             <LargeSidebarSection>
                 <LargeSidebarItem isActive IconOrImgUrl={Home} title="Home" url="/"/>
                 {/* <LargeSidebarItem IconOrImgUrl={Repeat} title="Shorts" url="/shorts"/> */}
-                <LargeSidebarItem IconOrImgUrl={Clapperboard} title="Subscriptions" url="/subscriptions"/>
+                <LargeSidebarItem isActive={false} IconOrImgUrl={Clapperboard} title="Subscriptions" url="/subscriptions"/>
                 {/* <LargeSidebarItem IconOrImgUrl={Library} title="Library" url="/library"/> */}
             </LargeSidebarSection>
             <hr />
@@ -91,6 +91,7 @@ export function Sidebar() {
         <LargeSidebarSection title="Subscriptions">
           {subscriptions.map(subscription => (
             <LargeSidebarItem
+              isActive={false} 
               key={subscription.id}
               IconOrImgUrl={subscription.imgUrl}
               title={subscription.channelName}
@@ -101,44 +102,52 @@ export function Sidebar() {
         <hr />
         <LargeSidebarSection title="Explore">
           <LargeSidebarItem
+            isActive={false} 
             IconOrImgUrl={Flame}
             title="Trending"
             url="/trending"
           />
           <LargeSidebarItem
+            isActive={false} 
             IconOrImgUrl={ShoppingBag}
             title="Shopping"
             url="/shopping"
           />
-          <LargeSidebarItem IconOrImgUrl={Music2} title="Music" url="/music" />
+          <LargeSidebarItem isActive={false}  IconOrImgUrl={Music2} title="Music" url="/music" />
           <LargeSidebarItem
+            isActive={false} 
             IconOrImgUrl={Film}
             title="Movies & TV"
             url="/movies-tv"
           />
-          <LargeSidebarItem IconOrImgUrl={Radio} title="Live" url="/live" />
+          <LargeSidebarItem isActive={false}  IconOrImgUrl={Radio} title="Live" url="/live" />
           <LargeSidebarItem
+            isActive={false} 
             IconOrImgUrl={Gamepad2}
             title="Gaming"
             url="/gaming"
           />
-          <LargeSidebarItem IconOrImgUrl={Newspaper} title="News" url="/news" />
+          <LargeSidebarItem isActive={false} IconOrImgUrl={Newspaper} title="News" url="/news" />
           <LargeSidebarItem
+            isActive={false} 
             IconOrImgUrl={Trophy}
             title="Sports"
             url="/sports"
           />
           <LargeSidebarItem
+            isActive={false} 
             IconOrImgUrl={Lightbulb}
             title="Learning"
             url="/learning"
           />
           <LargeSidebarItem
+            isActive={false} 
             IconOrImgUrl={Shirt}
             title="Fashion & Beauty"
             url="/fashion-beauty"
           />
           <LargeSidebarItem
+            isActive={false} 
             IconOrImgUrl={Podcast}
             title="Podcasts"
             url="/podcasts"
@@ -200,7 +209,7 @@ type LargeSidebarItemProps = {
     IconOrImgUrl: ElementType | string
     title: string
     url: string
-    isActive: boolean
+    isActive?: boolean
 }
 
 function LargeSidebarItem({ IconOrImgUrl, title, url, isActive = false }:
