@@ -46,7 +46,7 @@ export function VideoGridItem({
         }
     }, [isVideoPlaying])
 
-    return <div className="flex flex-col gap-2 w-[99%]" 
+    return <div className="flex flex-col gap-2 w-[90%] sm:w-[99%] " 
     onMouseEnter={() => setIsVideoPlaying(true)}
     onMouseLeave={() => setIsVideoPlaying(false)}
     >
