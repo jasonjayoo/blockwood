@@ -11,7 +11,7 @@
         },
         size: {
             default: ["rounded", "p-2"],
-            icon: ["rounded-full", "w-10", "h-10", "flex", "item-center", "justify-center", "p-2"],
+            icon: ["rounded-full", "w-9", "h-9", "md:w-10", "md:h-10", "flex", "items-center", "justify-center", "p-2"],
         },
     },
     defaultVariants: {
