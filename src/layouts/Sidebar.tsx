@@ -35,7 +35,7 @@ export function Sidebar() {
 
     return (
         <>
-        <aside className={`sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col ml-1 ${isLargeOpen ? "lg:hidden" : "lg:flex" }`}>
+        <aside className={`sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col w-16 ml-1 ${isLargeOpen ? "lg:hidden" : "lg:flex" }`}>
             <SmallSidebarItem Icon={Home} title="Home" url="/" />
 
             <SmallSidebarItem Icon={Repeat} title="Shorts" url="/shorts" />
@@ -168,7 +168,7 @@ function SmallSidebarItem({ Icon, title, url }:
     SmallSidebarItemProps) {
         return <a href={url} className={twMerge(buttonStyles({ variant: "ghost" }), "py-4 px-1 flex flex-col items-center rounded-lg gap-1")}>
             <Icon className="w-6 h-6" />
-            <div className="text-sm">{title}</div>
+            <div className="text-[10px]">{title}</div>
         </a>
     } 
 

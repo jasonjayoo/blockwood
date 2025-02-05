@@ -20,7 +20,7 @@ export function PageHeader() {
         }
     }, [])
 
-    return <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-4">
+    return <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-[6px] md:mx-4">
     <PageHeaderFirstSection hidden={showFullWidthMobile} />
         <form className={`gap-4 flex-grow justify-center ${showFullWidthMobile ? "flex" : "hidden md:flex"}`}>
             {showFullWidthMobile && (
