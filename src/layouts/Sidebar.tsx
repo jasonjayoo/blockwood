@@ -83,7 +83,7 @@ export function Sidebar() {
               key={playlist.id}
               IconOrImgUrl={ListVideo}
               title={playlist.name}
-              url={`/playlist?list=${playlist.id}`}
+              url={`https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio?list=${playlist.id}`}
             />
           ))}
         </LargeSidebarSection>
@@ -95,7 +95,7 @@ export function Sidebar() {
               key={subscription.id}
               IconOrImgUrl={subscription.imgUrl}
               title={subscription.channelName}
-              url={`/@${subscription.id}`}
+              url={`https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio@${subscription.id}`}
             />
           ))}
         </LargeSidebarSection>
@@ -113,21 +113,21 @@ export function Sidebar() {
             title="Shopping"
             url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
-          <LargeSidebarItem isActive={false}  IconOrImgUrl={Music2} title="Music" url="/music" />
+          <LargeSidebarItem isActive={false}  IconOrImgUrl={Music2} title="Music" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio" />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Film}
             title="Movies & TV"
             url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
-          <LargeSidebarItem isActive={false}  IconOrImgUrl={Radio} title="Live" url="/live" />
+          <LargeSidebarItem isActive={false}  IconOrImgUrl={Radio} title="Live" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio" />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Gamepad2}
             title="Gaming"
             url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
-          <LargeSidebarItem isActive={false} IconOrImgUrl={Newspaper} title="News" url="/news" />
+          <LargeSidebarItem isActive={false} IconOrImgUrl={Newspaper} title="News" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio" />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Trophy}
