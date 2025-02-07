@@ -38,9 +38,9 @@ export function Sidebar() {
         <aside className={`sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col w-16 ml-1 ${isLargeOpen ? "lg:hidden" : "lg:flex" }`}>
             <SmallSidebarItem Icon={Home} title="Home" url="/" />
 
-            <SmallSidebarItem Icon={Repeat} title="Shorts" url="/shorts" />
-            <SmallSidebarItem Icon={Clapperboard} title="Subscriptions" url="/subscriptions" />
-            <SmallSidebarItem Icon={Library} title="Library" url="/library" />
+            <SmallSidebarItem Icon={Repeat} title="Shorts" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about" />
+            <SmallSidebarItem Icon={Clapperboard} title="Subscriptions" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about" />
+            <SmallSidebarItem Icon={Library} title="Library" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about" />
         </aside>
         {isSmallOpen && (
             <div onClick={close} className="lg:hidden fixed inset-0 z-[999] bg-secondary-dark opacity-50"/>
@@ -52,31 +52,31 @@ export function Sidebar() {
             </div>
             <LargeSidebarSection>
                 <LargeSidebarItem isActive IconOrImgUrl={Home} title="Home" url="/"/>
-                {/* <LargeSidebarItem IconOrImgUrl={Repeat} title="Shorts" url="/shorts"/> */}
-                <LargeSidebarItem isActive={false} IconOrImgUrl={Clapperboard} title="Subscriptions" url="/subscriptions"/>
-                {/* <LargeSidebarItem IconOrImgUrl={Library} title="Library" url="/library"/> */}
+    
+                <LargeSidebarItem isActive={false} IconOrImgUrl={Clapperboard} title="Subscriptions" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"/>
+
             </LargeSidebarSection>
             <hr />
         <LargeSidebarSection visibleItemCount={5}>
           <LargeSidebarItem
             IconOrImgUrl={Library}
             title="Library"
-            url="/library"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem
             IconOrImgUrl={History}
             title="History"
-            url="/history"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem
             IconOrImgUrl={PlaySquare}
             title="Your Videos"
-            url="/your-videos"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem
             IconOrImgUrl={Clock}
             title="Watch Later"
-            url="/playlist?list=WL"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           {playlists.map(playlist => (
             <LargeSidebarItem
@@ -105,52 +105,52 @@ export function Sidebar() {
             isActive={false} 
             IconOrImgUrl={Flame}
             title="Trending"
-            url="/trending"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={ShoppingBag}
             title="Shopping"
-            url="/shopping"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem isActive={false}  IconOrImgUrl={Music2} title="Music" url="/music" />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Film}
             title="Movies & TV"
-            url="/movies-tv"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem isActive={false}  IconOrImgUrl={Radio} title="Live" url="/live" />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Gamepad2}
             title="Gaming"
-            url="/gaming"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem isActive={false} IconOrImgUrl={Newspaper} title="News" url="/news" />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Trophy}
             title="Sports"
-            url="/sports"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Lightbulb}
             title="Learning"
-            url="/learning"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Shirt}
             title="Fashion & Beauty"
-            url="/fashion-beauty"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
           <LargeSidebarItem
             isActive={false} 
             IconOrImgUrl={Podcast}
             title="Podcasts"
-            url="/podcasts"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
           />
         </LargeSidebarSection>
         </aside>
