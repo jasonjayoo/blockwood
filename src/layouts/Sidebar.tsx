@@ -38,9 +38,9 @@ export function Sidebar() {
         <aside className={`sticky top-0 overflow-y-auto scrollbar-hidden pb-4 flex flex-col w-16 ml-1 ${isLargeOpen ? "lg:hidden" : "lg:flex" }`}>
             <SmallSidebarItem Icon={Home} title="Home" url="/" />
 
-            <SmallSidebarItem Icon={Repeat} title="Shorts" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about" />
-            <SmallSidebarItem Icon={Clapperboard} title="Subscriptions" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about" />
-            <SmallSidebarItem Icon={Library} title="Library" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about" />
+            <SmallSidebarItem Icon={Repeat} title="Shorts" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio" />
+            <SmallSidebarItem Icon={Clapperboard} title="Subscriptions" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio" />
+            <SmallSidebarItem Icon={Library} title="Library" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio" />
         </aside>
         {isSmallOpen && (
             <div onClick={close} className="lg:hidden fixed inset-0 z-[999] bg-secondary-dark opacity-50"/>
@@ -53,7 +53,7 @@ export function Sidebar() {
             <LargeSidebarSection>
                 <LargeSidebarItem isActive IconOrImgUrl={Home} title="Home" url="/"/>
     
-                <LargeSidebarItem isActive={false} IconOrImgUrl={Clapperboard} title="Subscriptions" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"/>
+                <LargeSidebarItem isActive={false} IconOrImgUrl={Clapperboard} title="Subscriptions" url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio"/>
 
             </LargeSidebarSection>
             <hr />
@@ -61,22 +61,22 @@ export function Sidebar() {
           <LargeSidebarItem
             IconOrImgUrl={Library}
             title="Library"
-            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio"
           />
           <LargeSidebarItem
             IconOrImgUrl={History}
             title="History"
-            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio"
           />
           <LargeSidebarItem
             IconOrImgUrl={PlaySquare}
             title="Your Videos"
-            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio"
           />
           <LargeSidebarItem
             IconOrImgUrl={Clock}
             title="Watch Later"
-            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/about"
+            url="https://jasonjayoo.github.io/jasonyoo-fullstack-portfolio/portfolio"
           />
           {playlists.map(playlist => (
             <LargeSidebarItem
