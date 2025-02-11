@@ -5,9 +5,9 @@
  export const buttonStyles = cva([ "transition-colors"], {
     variants: {
         variant: {
-            default: ["bg-secondary", "hover:bg-secondary-hover"],
+            default: ["bg-secondary", "hover:bg-black", "hover:text-white"],
             ghost: ["hover:bg-gray-100"],
-            dark: ["bg-secondary-dark", "hover:bg-secondary-dark-hover", "text-secondary" ],
+            dark: ["bg-secondary-dark", "hover:bg-black", "hover:text-white", "text-secondary" ],
         },
         size: {
             default: ["rounded", "p-2"],
