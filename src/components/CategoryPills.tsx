@@ -8,8 +8,6 @@ type CategoryPillProps = {
     onSelect: (category: string) => void
 }
 
-// Stopped at 53:55 - How To Create The YouTube Home Page With Tailwind, React, and TypeScript
-
 const TRANSLATE_AMOUNT = 200
 
 export function CategoryPills({ categories, selectedCategory, onSelect }: CategoryPillProps ) {
