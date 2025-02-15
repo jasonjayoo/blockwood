@@ -1,12 +1,14 @@
 
 import { useState, useEffect } from "react"
-import { ArrowLeft, Bell, Menu, Mic, Search, Upload, User } from "lucide-react"
+import { ArrowLeft, Bell, Menu, Mic, Moon, Search, Sun, Upload, User } from "lucide-react"
 import logo from "../assets/blockwood-transparent2.png"
 import { Button } from "../components/Button"
 import { useSidebarContext } from "../contexts/SidebarContext"
+import { useTheme } from "../contexts/ThemeContext";
 
 export function PageHeader() {
-    const [showFullWidthMobile, setShowFullWidthMobile] = useState(false)
+    const [showFullWidthMobile, setShowFullWidthMobile] = useState(false);
+    const { theme, toggleTheme } = useTheme();
 
     useEffect(() => {
         const handleResize = () => {
@@ -53,6 +55,9 @@ export function PageHeader() {
             </Button>
             <Button size="icon" variant="ghost">
                 <User />
+            </Button>
+            <Button onClick={toggleTheme} size="icon" variant="ghost">
+                    {theme === "light" ? <Moon /> : <Sun className="text-yellow-400" />}
             </Button>
         </div>
     </div>
