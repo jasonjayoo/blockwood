@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from "react"
-import { ArrowLeft, Bell, Menu, Mic, Moon, Search, Sun, Upload, User } from "lucide-react"
+import { ArrowLeft, Bell, Menu, Mic, Moon, Search, Sun, User } from "lucide-react"
 import logo from "../assets/blockwood-transparent2.png"
 import { Button } from "../components/Button"
 import { useSidebarContext } from "../contexts/SidebarContext"
