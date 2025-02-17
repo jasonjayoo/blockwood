@@ -47,9 +47,9 @@ export function PageHeader() {
             <Button size="icon" variant="ghost" className="md:hidden">
                 <Mic />
             </Button>
-            <Button size="icon" variant="ghost">
+            {/* <Button size="icon" variant="ghost">
                 <Upload />
-            </Button>
+            </Button> */}
             <Button size="icon" variant="ghost">
                 <Bell />
             </Button>
@@ -77,8 +77,7 @@ export function PageHeaderFirstSection({ hidden = false }: PageHeaderFirstSectio
                 <Menu />
             </Button>
             <a href="/">
-                {/* <img src={logo} className="h-6 w-45 sm:h-10 sm:w-auto"/> */}
-                <img src={logo} className="h-6" />
+                <img src={logo} className="h-6 dark:invert" />
             </a>
         </div>
 }

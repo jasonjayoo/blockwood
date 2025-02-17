@@ -21,3 +21,31 @@
 .scrollbar-hidden:hover::-webkit-scrollbar-thumb {
     @apply bg-secondary-border;
 }
+
+/* Dark Mode */
+.dark body {
+    @apply bg-gray-900 text-white;
+}
+
+/* Ensuring buttons and elements respect dark mode */
+.dark .bg-secondary {
+    @apply bg-gray-800; /* Darker background */
+}
+.dark .hover\:bg-black:hover {
+    @apply bg-gray-700; /* Slightly lighter black */
+}
+.dark .text-secondary {
+    @apply text-gray-300;
+}
+
+.dark .bg-white {
+    @apply bg-gray-900;
+}
+
+.dark .bg-neutral-100 {
+    @apply bg-gray-900;
+}
+
+/* .dark .from-50/%{
+    @apply --tw-gradient-from-position: -50%;
+} */
