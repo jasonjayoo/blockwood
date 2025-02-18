@@ -24,7 +24,7 @@ export function PageHeader() {
 
     return <div className="flex gap-10 lg:gap-20 justify-between pt-2 mb-6 mx-[6px] md:mx-4">
     <PageHeaderFirstSection hidden={showFullWidthMobile} />
-        <form className={`gap-4 flex-grow justify-center ${showFullWidthMobile ? "flex" : "hidden md:flex"}`}>
+        <form className={`gap-3 flex-grow justify-center ${showFullWidthMobile ? "flex" : "hidden md:flex"}`}>
             {showFullWidthMobile && (
                 <Button onClick={() => setShowFullWidthMobile(false)} type="button" size="icon" variant="ghost" className="flex-shrink-0">
                     <ArrowLeft />
@@ -72,7 +72,7 @@ export function PageHeaderFirstSection({ hidden = false }: PageHeaderFirstSectio
     const { toggle } = useSidebarContext()
     
     return <div 
-            className={`gap-4 items-center flex-shrink-0 ${hidden ? "hidden" : "flex"}`}>
+            className={`gap-2 items-center flex-shrink-0 ${hidden ? "hidden" : "flex"}`}>
             <Button onClick={toggle} variant="ghost" size="icon" >
                 <Menu />
             </Button>
